@@ -1,1 +1,16 @@
-[]
+{
+    "ApplicationName": "StarRupture",
+    "Description": "High-fidelity industrial survival server.",
+    "Flags": [
+        "-Log",
+        "-MULTIHOME={{IP}}",
+        "-Port={{PrimaryPort}}",
+        "-QueryPort={{QueryPort}}",
+        "-ServerName=\"{{FriendlyName}}\""
+    ],
+    "Ports": [
+        {"Name": "Game Port", "Port": 7777, "Protocol": "UDP"},
+        {"Name": "Query Port", "Port": 27015, "Protocol": "UDP"},
+        {"Name": "BlobSync", "Port": 27016, "Protocol": "UDP"}
+    ]
+}
